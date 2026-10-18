@@ -1,0 +1,31 @@
+[project]
+name = "agent-stack-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rajesh", email = "beherarajesh90@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "deepagents>=0.7.28",
+    "deepeval>=4.3.1",
+    "langchain>=1.4.6",
+    "langchain-anthropic>=1.7.6",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-openai>=1.7.2",
+    "langchain-pinecone>=0.0.1",
+    "langfuse>=5.0.2",
+    "langgraph>=1.2.16",
+    "pinecone>=7.3.0",
+    "python-dotenv>=1.2.4",
+    "ragas>=0.0.22",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+agent-stack-lab = "agent_stack_lab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
